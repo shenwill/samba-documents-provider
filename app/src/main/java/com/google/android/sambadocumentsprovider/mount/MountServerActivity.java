@@ -283,6 +283,7 @@ public class MountServerActivity extends AppCompatActivity {
 
     if (mShareManager.isShareMounted(metadata.getUri().toString())) {
       showMessage(R.string.share_already_mounted);
+      launchFileManager(metadata);
       return;
     }
 
